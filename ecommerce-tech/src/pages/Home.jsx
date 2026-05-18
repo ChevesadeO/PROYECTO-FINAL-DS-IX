@@ -1,8 +1,8 @@
-import Navbar from "../components/layout/Navbar"; // llamamos al componente Navbar para mostrarlo en la página de inicio
-import Banner from "../components/home/Banner"; // llamamos al componente Banner para mostrarlo en la página de inicio
-import ProductCard from "../components/products/ProductCard"; // llamamos al componente ProductCard para mostrar los productos en la página de inicio
+import Navbar from "../components/layout/Navbar"; 
+import Banner from "../components/home/Banner"; 
+import ProductCard from "../components/products/ProductCard"; 
 
-import products from "../data/products"; // importamos los productos desde el archivo products.js para mostrarlos en la página de inicio
+import products from "../data/products"; 
 
 function Home() {
 

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaShoppingCart, FaUser } from "react-icons/fa";
 
-import "../../styles/navbar.css";
+import "../../../styles/navbar.css";
 
 function Navbar() {
   return (

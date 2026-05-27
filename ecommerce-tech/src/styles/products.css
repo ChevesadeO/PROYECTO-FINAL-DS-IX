@@ -109,4 +109,133 @@
   font-size: 11px;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing:
+  letter-spacing: 0.05em;
+  color: #3b82f6;
+  background: #eff6ff;
+  padding: 3px 8px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+.catalog-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 10px 0 6px;
+  display: block;
+  text-decoration: none;
+}
+
+.catalog-name:hover {
+  color: #3b82f6;
+}
+
+.catalog-desc {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.catalog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.catalog-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.catalog-add-btn {
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.catalog-add-btn:hover {
+  background: #2563eb;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 0;
+  color: #64748b;
+}
+
+.no-results p {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.no-results button {
+  padding: 10px 24px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ProductCard en Home */
+.product-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  padding: 12px 16px 4px;
+}
+
+.product-card p {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  padding: 0 16px 12px;
+}
+
+.product-card button {
+  width: calc(100% - 32px);
+  margin: 0 16px 16px;
+  background: #3b82f6;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.product-card button:hover {
+  background: #2563eb;
+}

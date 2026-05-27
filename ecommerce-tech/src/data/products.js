@@ -1,26 +1,100 @@
 const products = [
-
   {
-    id:1,
-    name:"Laptop Gamer",
-    price:1200,
-    image:"https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800"
+    id: 1,
+    name: "Laptop Gamer Pro",
+    price: 1200,
+    category: "laptops",
+    description: "Laptop gaming con RTX 4060, 16GB RAM, 512GB SSD.",
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800"
   },
-
   {
-    id:2,
-    name:"iPhone 15",
-    price:999,
-    image:"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800"
+    id: 2,
+    name: "MacBook Air M2",
+    price: 1399,
+    category: "laptops",
+    description: "Ultradelgada, chip M2, batería de 18 horas.",
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800"
   },
-
   {
-    id:3,
-    name:"Headset RGB",
-    price:150,
-    image:"https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800"
-  }
-
+    id: 3,
+    name: "iPhone 15",
+    price: 999,
+    category: "smartphones",
+    description: "Cámara 48MP, chip A16, Dynamic Island.",
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800"
+  },
+  {
+    id: 4,
+    name: "Samsung Galaxy S24",
+    price: 899,
+    category: "smartphones",
+    description: "Pantalla AMOLED 120Hz, 256GB, cámara 200MP.",
+    image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=800"
+  },
+  {
+    id: 5,
+    name: "Headset RGB Pro",
+    price: 150,
+    category: "accesorios",
+    description: "Sonido 7.1 virtual, micrófono con cancelación de ruido.",
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800"
+  },
+  {
+    id: 6,
+    name: "Teclado Mecánico",
+    price: 120,
+    category: "accesorios",
+    description: "Switches Cherry MX Red, retroiluminación RGB.",
+    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800"
+  },
+  {
+    id: 7,
+    name: "Mouse Gamer",
+    price: 65,
+    category: "accesorios",
+    description: "16000 DPI, 7 botones programables, RGB.",
+    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=800"
+  },
+  {
+    id: 8,
+    name: "Monitor 4K 27\"",
+    price: 450,
+    category: "monitores",
+    description: "Resolución 4K UHD, 144Hz, panel IPS, HDR400.",
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800"
+  },
+  {
+    id: 9,
+    name: "Monitor Curvo 32\"",
+    price: 380,
+    category: "monitores",
+    description: "Curvatura 1500R, 165Hz, FreeSync Premium.",
+    image: "https://images.unsplash.com/photo-1593640408182-31c228b28b53?q=80&w=800"
+  },
+  {
+    id: 10,
+    name: "iPad Pro M2",
+    price: 1099,
+    category: "tablets",
+    description: "Pantalla Liquid Retina 11\", chip M2, compatible con Apple Pencil.",
+    image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=800"
+  },
+  {
+    id: 11,
+    name: "Samsung Galaxy Tab S9",
+    price: 799,
+    category: "tablets",
+    description: "Pantalla AMOLED 11\", S Pen incluido, 128GB.",
+    image: "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=800"
+  },
+  {
+    id: 12,
+    name: "Disco SSD 1TB",
+    price: 95,
+    category: "almacenamiento",
+    description: "NVMe PCIe 4.0, lectura 7000MB/s, garantía 5 años.",
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800"
+  },
 ];
 
 export default products;

@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import Product from "../pages/Product";
 import ProductDetails from "../pages/ProductDetails";
 import Cart from "../pages/Cart";
+import Checkout from "../pages/Checkout";
+import Invoice from "../pages/Invoice";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import Admin from "../pages/Admin";
@@ -15,8 +17,10 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/productos" element={<Product />} />
-        <Route path="/producto/:id" element={<ProductDetails />} />
+        <Route path="/productos/:id" element={<ProductDetails />} />
         <Route path="/carrito" element={<Cart />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/factura" element={<Invoice />} />
         <Route path="/login" element={<Login />} />
         <Route path="/registro" element={<Register />} />
         <Route path="/admin" element={<Admin />} />

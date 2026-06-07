@@ -1,10 +1,18 @@
-import { Link } from "react-router-dom";
-import { FaShoppingCart, FaUser } from "react-icons/fa";
+import { Link, useNavigate } from "react-router-dom";
+import { FaShoppingCart, FaUser, FaSignOutAlt } from "react-icons/fa";
 import useCartStore from "../../../store/cartStore";
+import useAuthStore from "../../../store/authStore";
 import "../../../styles/navbar.css";
 
 function Navbar() {
   const totalItems = useCartStore((state) => state.getTotalItems());
+  const { user, isAuthenticated, logout } = useAuthStore();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/");
+  };
 
   return (
     <nav className="navbar">
@@ -15,7 +23,7 @@ function Navbar() {
       <ul className="navbar-links">
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/productos">Productos</Link></li>
-        <li><Link to="/login">Login</Link></li>
+        {!isAuthenticated && <li><Link to="/login">Login</Link></li>}
       </ul>
 
       <div className="navbar-icons">
@@ -25,12 +33,22 @@ function Navbar() {
             <span className="cart-badge">{totalItems}</span>
           )}
         </Link>
-        <Link to="/login">
-          <FaUser />
-        </Link>
+
+        {isAuthenticated ? (
+          <div className="navbar-user">
+            <span className="navbar-username">Hola, {user.name}</span>
+            <button className="logout-btn" onClick={handleLogout}>
+              <FaSignOutAlt />
+            </button>
+          </div>
+        ) : (
+          <Link to="/login">
+            <FaUser />
+          </Link>
+        )}
       </div>
     </nav>
   );
 }
 
-export default Navbar; 
+export default Navbar;

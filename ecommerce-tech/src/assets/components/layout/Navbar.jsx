@@ -24,6 +24,9 @@ function Navbar() {
         <li><Link to="/">Inicio</Link></li>
         <li><Link to="/productos">Productos</Link></li>
         {!isAuthenticated && <li><Link to="/login">Login</Link></li>}
+        {isAuthenticated && (
+        <li><Link to="/admin">Admin</Link></li>
+        )}
       </ul>
 
       <div className="navbar-icons">

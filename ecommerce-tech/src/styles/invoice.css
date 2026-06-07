@@ -1,0 +1,243 @@
+.invoice-page {
+  padding: 40px 8%;
+  max-width: 900px;
+  margin: 0 auto;
+  min-height: 80vh;
+}
+
+/* Éxito */
+.invoice-success {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #22c55e;
+  color: #fff;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+}
+
+.success-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.success-subtitle {
+  font-size: 15px;
+  color: #64748b;
+}
+
+/* Factura */
+.invoice-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 32px;
+}
+
+.invoice-header {
+  background: #2563eb;
+  color: #fff;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.invoice-brand {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.invoice-brand-sub {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.invoice-meta {
+  text-align: right;
+}
+
+.invoice-number {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.invoice-date {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.invoice-section {
+  padding: 24px 32px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.invoice-section-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px;
+}
+
+.invoice-customer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.invoice-label {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 3px;
+}
+
+.invoice-value {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f172a;
+}
+
+/* Tabla */
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.invoice-table th {
+  text-align: left;
+  padding: 10px 12px;
+  background: #f8fafc;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.invoice-table td {
+  padding: 12px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #0f172a;
+}
+
+.invoice-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Totales */
+.invoice-totals {
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  background: #f8fafc;
+}
+
+.totals-row {
+  display: flex;
+  gap: 48px;
+  justify-content: flex-end;
+  font-size: 14px;
+  color: #64748b;
+  width: 260px;
+}
+
+.totals-row span:last-child {
+  min-width: 80px;
+  text-align: right;
+}
+
+.free {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.totals-final {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  border-top: 2px solid #e2e8f0;
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+.invoice-footer-note {
+  padding: 16px 32px;
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+  border-top: 1px solid #f1f5f9;
+}
+
+/* Acciones */
+.invoice-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.invoice-btn-download {
+  padding: 12px 28px;
+  background: #0f172a;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.invoice-btn-download:hover {
+  background: #1e293b;
+}
+
+.invoice-btn-shop {
+  padding: 12px 28px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.invoice-btn-shop:hover {
+  background: #2563eb;
+}
+
+.invoice-btn-home {
+  padding: 12px 28px;
+  background: #f1f5f9;
+  color: #0f172a;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.invoice-btn-home:hover {
+  background: #e2e8f0;
+}

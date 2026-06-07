@@ -25,7 +25,7 @@ function Login() {
     if (Object.keys(e).length > 0) { setErrors(e); return; }
     setLoading(true);
     await new Promise((r) => setTimeout(r, 800));
-    login({ name: "Usuario", email: form.email, role: "user" });
+    login({ name: form.email.split("@")[0], email: form.email, role: "user" });
     setLoading(false);
     navigate("/");
   };

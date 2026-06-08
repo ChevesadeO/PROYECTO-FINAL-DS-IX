@@ -27,10 +27,11 @@ function Register() {
     if (Object.keys(e).length > 0) { setErrors(e); return; }
     setLoading(true);
     await new Promise((r) => setTimeout(r, 800));
-    login({ name: form.name, email: form.email, role: "user" });
-    setLoading(false);
-    navigate("/");
-  };
+    login({
+    name: form.name,
+    email: form.email,
+    role: form.email === "admin@techstore.com" ? "admin" : "user",
+  });
 
   const handleChange = (field, value) => {
     setForm({ ...form, [field]: value });
@@ -113,6 +114,6 @@ function Register() {
       </div>
     </>
   );
+ }
 }
-
 export default Register;

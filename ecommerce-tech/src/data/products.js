@@ -5,7 +5,9 @@ const products = [
     price: 1200,
     category: "laptops",
     description: "Laptop gaming con RTX 4060, 16GB RAM, 512GB SSD.",
-    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=800",
+    featured: true,
+    isNew: false,
   },
   {
     id: 2,
@@ -13,7 +15,9 @@ const products = [
     price: 1399,
     category: "laptops",
     description: "Ultradelgada, chip M2, batería de 18 horas.",
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800",
+    featured: true,
+    isNew: false,
   },
   {
     id: 3,
@@ -21,7 +25,9 @@ const products = [
     price: 999,
     category: "smartphones",
     description: "Cámara 48MP, chip A16, Dynamic Island.",
-    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800",
+    featured: true,
+    isNew: false,
   },
   {
     id: 4,
@@ -29,7 +35,9 @@ const products = [
     price: 899,
     category: "smartphones",
     description: "Pantalla AMOLED 120Hz, 256GB, cámara 200MP.",
-    image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?q=80&w=800",
+    featured: false,
+    isNew: true,
   },
   {
     id: 5,
@@ -37,7 +45,9 @@ const products = [
     price: 150,
     category: "accesorios",
     description: "Sonido 7.1 virtual, micrófono con cancelación de ruido.",
-    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?q=80&w=800",
+    featured: false,
+    isNew: true,
   },
   {
     id: 6,
@@ -45,7 +55,9 @@ const products = [
     price: 120,
     category: "accesorios",
     description: "Switches Cherry MX Red, retroiluminación RGB.",
-    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1587829741301-dc798b83add3?q=80&w=800",
+    featured: false,
+    isNew: true,
   },
   {
     id: 7,
@@ -53,7 +65,9 @@ const products = [
     price: 65,
     category: "accesorios",
     description: "16000 DPI, 7 botones programables, RGB.",
-    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=800",
+    featured: false,
+    isNew: false,
   },
   {
     id: 8,
@@ -61,7 +75,9 @@ const products = [
     price: 450,
     category: "monitores",
     description: "Resolución 4K UHD, 144Hz, panel IPS, HDR400.",
-    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=800",
+    featured: true,
+    isNew: false,
   },
   {
     id: 9,
@@ -69,7 +85,9 @@ const products = [
     price: 380,
     category: "monitores",
     description: "Curvatura 1500R, 165Hz, FreeSync Premium.",
-    image: "https://images.unsplash.com/photo-1593640408182-31c228b28b53?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1593640408182-31c228b28b53?q=80&w=800",
+    featured: false,
+    isNew: false,
   },
   {
     id: 10,
@@ -77,7 +95,9 @@ const products = [
     price: 1099,
     category: "tablets",
     description: "Pantalla Liquid Retina 11\", chip M2, compatible con Apple Pencil.",
-    image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?q=80&w=800",
+    featured: true,
+    isNew: false,
   },
   {
     id: 11,
@@ -85,7 +105,9 @@ const products = [
     price: 799,
     category: "tablets",
     description: "Pantalla AMOLED 11\", S Pen incluido, 128GB.",
-    image: "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1561154464-82e9adf32764?q=80&w=800",
+    featured: false,
+    isNew: true,
   },
   {
     id: 12,
@@ -93,7 +115,33 @@ const products = [
     price: 95,
     category: "almacenamiento",
     description: "NVMe PCIe 4.0, lectura 7000MB/s, garantía 5 años.",
-    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800"
+    image: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?q=80&w=800",
+    featured: false,
+    isNew: true,
+  },
+];
+
+export const comingSoon = [
+  {
+    id: 101,
+    name: "iPhone 16 Pro",
+    description: "El próximo nivel en fotografía móvil. Chip A18, cámara periscópica.",
+    image: "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?q=80&w=800",
+    releaseDate: "Próximamente 2025",
+  },
+  {
+    id: 102,
+    name: "MacBook Pro M4",
+    description: "Rendimiento extremo para profesionales. El chip más potente de Apple.",
+    image: "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?q=80&w=800",
+    releaseDate: "Próximamente 2025",
+  },
+  {
+    id: 103,
+    name: "Samsung Galaxy Ring",
+    description: "El futuro del wearable. Monitoreo de salud 24/7 en un anillo.",
+    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800",
+    releaseDate: "Próximamente 2025",
   },
 ];
 

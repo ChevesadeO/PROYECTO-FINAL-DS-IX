@@ -4,6 +4,9 @@ import products from "../data/products";
 import useCartStore from "../store/cartStore";
 import Navbar from "../assets/components/layout/Navbar";
 import "../styles/products.css";
+import Footer from "../assets/components/layout/Footer";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 
 const categories = [
   { value: "todas", label: "Todas" },
@@ -16,9 +19,22 @@ const categories = [
 ];
 
 function Product() {
-  const [search, setSearch] = useState("");
-  const [category, setCategory] = useState("todas");
-  const addItem = useCartStore((state) => state.addItem);
+const [searchParams] = useSearchParams();
+const [search, setSearch] = useState(searchParams.get("search") || "");
+const [category, setCategory] = useState(searchParams.get("category") || "todas");
+
+  useEffect(() => {
+    const searchParam = searchParams.get("q");
+    const categoryParam = searchParams.get("category");
+
+    if (searchParam) {
+      setSearch(searchParam);
+    }
+
+    if (categoryParam) {
+      setCategory(categoryParam);
+    }
+  }, [searchParams]);
 
   const filtered = products.filter((p) => {
     const matchCategory = category === "todas" || p.category === category;
@@ -93,6 +109,7 @@ function Product() {
           </div>
         )}
       </div>
+      <Footer />
     </>
   );
 }

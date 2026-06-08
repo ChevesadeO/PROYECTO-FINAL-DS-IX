@@ -4,6 +4,7 @@ import useCartStore from "../store/cartStore";
 import useAuthStore from "../store/authStore";
 import Navbar from "../assets/components/layout/Navbar";
 import "../styles/checkout.css";
+import Footer from "../assets/components/layout/Footer";
 
 function Checkout() {
   const { items, getTotal, clearCart } = useCartStore();
@@ -16,7 +17,6 @@ function Checkout() {
     phone: "",
     address: "",
     city: "",
-    zip: "",
     cardNumber: "",
     cardName: "",
     cardExpiry: "",
@@ -33,7 +33,6 @@ function Checkout() {
     if (!form.phone) e.phone = "Requerido";
     if (!form.address) e.address = "Requerido";
     if (!form.city) e.city = "Requerido";
-    if (!form.zip) e.zip = "Requerido";
     if (!form.cardNumber || form.cardNumber.replace(/\s/g, "").length < 16)
       e.cardNumber = "Número inválido";
     if (!form.cardName) e.cardName = "Requerido";
@@ -95,9 +94,12 @@ function Checkout() {
             Ver productos
           </Link>
         </div>
+        <Footer />
       </>
     );
   }
+
+  
 
   const tax = getTotal() * 0.07;
   const total = getTotal() + tax;

@@ -23,7 +23,7 @@ const emptyForm = { name: "", price: "", category: "laptops", stock: "", image: 
 const categories = ["laptops", "smartphones", "accesorios", "monitores", "tablets", "almacenamiento"];
 
 function Admin() {
-  const { isAuthenticated } = useAuthStore();
+  const { isAuthenticated, user } = useAuthStore();
   const navigate = useNavigate();
   const [products, setProducts] = useState(initialProducts);
   const [showForm, setShowForm] = useState(false);
@@ -33,20 +33,19 @@ function Admin() {
   const [search, setSearch] = useState("");
   const [deleteId, setDeleteId] = useState(null);
   const [toast, setToast] = useState(null);
+ 
 
-  if (!isAuthenticated) {
+if (!isAuthenticated || user?.role !== "admin") {
     return (
       <>
         <Navbar />
-        <div className="admin-blocked">
-          <div className="admin-blocked-card">
-            <span className="blocked-icon">🔒</span>
-            <h2>Acceso restringido</h2>
-            <p>Debes iniciar sesión para acceder al panel de administración.</p>
-            <button className="admin-btn-primary" onClick={() => navigate("/login")}>
-              Ir al Login
-            </button>
-          </div>
+        <div className="admin-blocked-card">
+        <span className="blocked-icon">🔒</span>
+        <h2>Acceso restringido</h2>
+        <p>Esta sección es solo para administradores.</p>
+        <button className="admin-btn-primary" onClick={() => navigate("/login")}>
+          Ir al Login
+        </button>
         </div>
       </>
     );

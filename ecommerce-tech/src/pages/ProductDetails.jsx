@@ -4,6 +4,7 @@ import products from "../data/products";
 import useCartStore from "../store/cartStore";
 import Navbar from "../assets/components/layout/Navbar";
 import "../styles/productDetails.css";
+import Footer from "../assets/components/layout/Footer";
 
 function ProductDetails() {
   const { id } = useParams();
@@ -23,6 +24,7 @@ function ProductDetails() {
             Volver al catálogo
           </Link>
         </div>
+        <Footer />
       </>
     );
   }

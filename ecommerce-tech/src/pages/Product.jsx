@@ -1,12 +1,11 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import products from "../data/products";
 import useCartStore from "../store/cartStore";
 import Navbar from "../assets/components/layout/Navbar";
 import "../styles/products.css";
 import Footer from "../assets/components/layout/Footer";
-import { useState, useEffect } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+
 
 const categories = [
   { value: "todas", label: "Todas" },

@@ -263,3 +263,32 @@
   gap: 20px;
   text-align: center;
 }
+
+.pd-image-wrapper {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+}
+
+.pd-info .pd-name { color: #fff; }
+.pd-info .pd-description { color: rgba(255, 255, 255, 0.75); }
+.pd-info .pd-price { color: #fff; }
+.pd-breadcrumb { color: rgba(255, 255, 255, 0.6); }
+
+.pd-extras {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pd-extra-item { color: rgba(255, 255, 255, 0.8); }
+
+.pd-related {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.pd-related-title { color: #fff; }
+
+.pd-related-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

@@ -321,3 +321,18 @@
   gap: 20px;
   text-align: center;
 }
+
+.checkout-page { background: transparent; }
+.checkout-title { color: #fff; }
+
+.checkout-section {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.checkout-summary {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}

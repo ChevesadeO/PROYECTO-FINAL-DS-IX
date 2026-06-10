@@ -555,3 +555,59 @@
 }
 
 .hero-banner-btn-secondary:hover { opacity: 1; }
+
+
+.home-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.coming-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.categories-section {
+  background: rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.category-pill {
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.category-pill:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: #0f172a;
+  border-color: transparent;
+}
+
+.home-section {
+  padding: 80px 0;
+}
+
+.coming-soon-section {
+  background: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+.stats-section {
+  background: rgba(0, 0, 0, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stat-number { color: #fff; }
+.stat-label { color: rgba(255, 255, 255, 0.75); }
+
+.section-title { color: #fff; }
+.section-eyebrow { color: #93c5fd; }
+.section-link { color: #93c5fd; }
+
+.home-card-name { color: #0f172a; }
+.home-card-price { color: #0f172a; }
+.home-card-desc { color: #475569; }

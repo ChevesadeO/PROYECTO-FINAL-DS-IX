@@ -114,3 +114,11 @@
 .auth-link:hover {
   text-decoration: underline;
 }
+
+.auth-page { background: transparent; }
+
+.auth-card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}

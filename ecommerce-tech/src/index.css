@@ -14,13 +14,18 @@
 }
 
 body {
-  background: #ffffff;
+  background: #43c6ac; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #191654, #43c6ac); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #191654, #43c6ac);
+  background-attachment: fixed;
+  min-height: 100vh;
   color: #1e293b;
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
+  background: transparent;
 }
 
 .products-grid {

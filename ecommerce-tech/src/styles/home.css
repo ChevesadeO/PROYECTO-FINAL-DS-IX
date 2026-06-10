@@ -468,3 +468,90 @@
   font-size: 14px;
   color: #64748b;
 }
+
+/* Hero Banner principal */
+.hero-banner {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  background-image: url("https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1600");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.hero-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(10, 15, 30, 0.92) 0%,
+    rgba(10, 15, 30, 0.7) 50%,
+    rgba(10, 15, 30, 0.2) 100%
+  );
+}
+
+.hero-banner-content {
+  position: relative;
+  z-index: 1;
+  padding: 0 8%;
+  max-width: 680px;
+}
+
+.hero-banner-eyebrow {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #3b82f6;
+  margin-bottom: 16px;
+}
+
+.hero-banner-title {
+  font-size: clamp(42px, 6vw, 76px);
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+.hero-banner-subtitle {
+  font-size: 18px;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 480px;
+}
+
+.hero-banner-ctas {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-banner-btn-primary {
+  padding: 14px 32px;
+  background: #3b82f6;
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.hero-banner-btn-primary:hover { background: #2563eb; }
+
+.hero-banner-btn-secondary {
+  font-size: 15px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+}
+
+.hero-banner-btn-secondary:hover { opacity: 1; }

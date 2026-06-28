@@ -3,9 +3,8 @@ import { Link, useSearchParams } from "react-router-dom";
 import products from "../data/products";
 import useCartStore from "../store/cartStore";
 import Navbar from "../assets/components/layout/Navbar";
-import "../styles/products.css";
 import Footer from "../assets/components/layout/Footer";
-
+import "../styles/products.css";
 
 const categories = [
   { value: "todas", label: "Todas" },
@@ -18,21 +17,16 @@ const categories = [
 ];
 
 function Product() {
-const [searchParams] = useSearchParams();
-const [search, setSearch] = useState(searchParams.get("search") || "");
-const [category, setCategory] = useState(searchParams.get("category") || "todas");
+  const [searchParams] = useSearchParams();
+  const [search, setSearch] = useState(searchParams.get("search") || "");
+  const [category, setCategory] = useState(searchParams.get("category") || "todas");
+  const addItem = useCartStore((state) => state.addItem);
 
   useEffect(() => {
     const searchParam = searchParams.get("q");
     const categoryParam = searchParams.get("category");
-
-    if (searchParam) {
-      setSearch(searchParam);
-    }
-
-    if (categoryParam) {
-      setCategory(categoryParam);
-    }
+    if (searchParam) setSearch(searchParam);
+    if (categoryParam) setCategory(categoryParam);
   }, [searchParams]);
 
   const filtered = products.filter((p) => {
@@ -50,7 +44,6 @@ const [category, setCategory] = useState(searchParams.get("category") || "todas"
           <p className="products-subtitle">{filtered.length} productos encontrados</p>
         </div>
 
-        {/* Filtros */}
         <div className="products-filters">
           <input
             type="text"
@@ -72,7 +65,6 @@ const [category, setCategory] = useState(searchParams.get("category") || "todas"
           </div>
         </div>
 
-        {/* Grid */}
         {filtered.length === 0 ? (
           <div className="no-results">
             <p>No se encontraron productos para "{search}"</p>

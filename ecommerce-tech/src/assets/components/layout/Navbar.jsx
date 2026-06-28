@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { FaShoppingCart, FaUser, FaSignOutAlt, FaSearch } from "react-icons/fa";
 import useCartStore from "../../../store/cartStore";
 import useAuthStore from "../../../store/authStore";
+import logoDark from "../../../assets/img/logo-light.png";
 import "../../../styles/navbar.css";
 
 function Navbar() {
@@ -26,15 +27,15 @@ function Navbar() {
 
   return (
     <>
-      {/* Cinta superior */}
       <div className="top-banner">
         <p>🚀 Envío gratis en compras mayores a $50 · Hasta 30% de descuento en accesorios gaming</p>
       </div>
 
-      {/* Navbar */}
       <nav className="navbar">
         <div className="navbar-logo">
-          <Link to="/">TechStore</Link>
+          <Link to="/">
+            <img src={logoDark} alt="TechStore" className="navbar-logo-img" />
+          </Link>
         </div>
 
         <ul className="navbar-links">
@@ -46,7 +47,6 @@ function Navbar() {
           )}
         </ul>
 
-        {/* Búsqueda */}
         <form className="navbar-search" onSubmit={handleSearch}>
           <input
             type="text"

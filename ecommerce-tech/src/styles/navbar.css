@@ -161,3 +161,10 @@
 }
 
 .navbar-search-btn:hover { color: #3b82f6; }
+
+
+.navbar-logo-img {
+  height: 165px;
+  max-width: 250px;
+  object-fit: contain;
+}

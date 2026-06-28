@@ -7,9 +7,12 @@ function Banner() {
       <div className="hero-banner-overlay"></div>
       <div className="hero-banner-content">
         <p className="hero-banner-eyebrow">Bienvenido a TechStore</p>
-        <h1 className="hero-banner-title">Tecnología del Futuro</h1>
+        <h1 className="hero-banner-title">
+          Tecnología<br />
+          <span>del Futuro</span>
+        </h1>
         <p className="hero-banner-subtitle">
-          Descubre laptops, smartphones y accesorios premium.
+          Descubre laptops, smartphones y accesorios premium con los mejores precios del mercado.
         </p>
         <div className="hero-banner-ctas">
           <Link to="/productos" className="hero-banner-btn-primary">

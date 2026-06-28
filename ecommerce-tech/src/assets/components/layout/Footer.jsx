@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoLight from "../../../assets/img/logo-light.png"; 
 import "../../../styles/footer.css";
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
       <div className="footer-content">
 
         <div className="footer-brand">
-          <h3 className="footer-logo">TechStore</h3>
+          <img src={logoLight} alt="TechStore" className="footer-logo-img" />
           <p className="footer-desc">
             Tu tienda de tecnología premium. Los mejores productos al mejor precio.
           </p>
@@ -44,7 +45,7 @@ function Footer() {
 
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} TechStore. Todos los derechos reservados.</p>
-        <p>Proyecto académico — Desarrollo de Software IX</p>
+        <p>Proyecto Final Semestral — Desarrollo de Software IX</p>
       </div>
     </footer>
   );
